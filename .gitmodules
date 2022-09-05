@@ -1,0 +1,3 @@
+[submodule "mercury-sys/mercury"]
+	path = mercury-sys/mercury
+	url = git@github.com:mercury-hpc/mercury.git
