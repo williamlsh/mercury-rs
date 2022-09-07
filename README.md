@@ -24,6 +24,7 @@ bash deps.sh
 Build `mercury-rs`:
 
 ```
+git submodule update --init --recursive
 cargo build -p mercury-rs
 ```
 
