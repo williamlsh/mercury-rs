@@ -20,4 +20,7 @@ fn main() {
             break;
         }
     }
+
+    hg.destroy_context();
+    hg.finalize();
 }

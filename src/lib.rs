@@ -106,4 +106,20 @@ impl HG {
             Ok(())
         }
     }
+
+    pub fn destroy_context(&self) {
+        unsafe {
+            if let Some(hg_context) = self.hg_context {
+                let ret = mercury_sys::HG_Context_destroy(hg_context);
+                assert_eq!(0, ret);
+            }
+        }
+    }
+
+    pub fn finalize(&self) {
+        unsafe {
+            let ret = mercury_sys::HG_Finalize(self.hg_class);
+            assert_eq!(0, ret);
+        }
+    }
 }
