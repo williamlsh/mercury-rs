@@ -10,5 +10,5 @@ build = "build.rs"
 [dependencies]
 
 [build-dependencies]
-# bindgen = "0.60"
+bindgen = "0.60"
 cmake = "0.1"
